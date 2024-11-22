@@ -8,7 +8,7 @@ Window{
 
     Image {
         anchors.centerIn: parent
-        source: "images/1.png"
+        source: "images/qt.jpg"
         rotation: 45
     }
 }
