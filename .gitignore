@@ -2,3 +2,7 @@ env/
 *.idea/
 *.idea
 *.pyc
+example/**/*.png
+example/**/*.gif
+example/**/*.jpg
+example/**/*.ttf

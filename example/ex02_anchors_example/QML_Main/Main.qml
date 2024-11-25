@@ -13,7 +13,7 @@ Window {
         }
         BorderImage {
             source: "images/bluebutton.png"
-            border: {
+            border {
                 left: 13; top: 13; right: 13; bottom: 13;
             }
             anchors.horizontalCenter: parent.horizontalCenter
