@@ -1,7 +1,7 @@
 import QtQuick
 
 Window {
-    visible: false; width: 400; height: 200; title: "anchors example"
+    visible: true; width: 400; height: 200; title: "anchors example"
     FontLoader {
         id: myFont
         source: "fonts/NanumGothic.ttf"
@@ -9,10 +9,10 @@ Window {
     Rectangle {
         width: 400; height: 200;
         Image {
-            source: "images/bluebackground.png"
+            source: "./images/bluebackground.png"
         }
         BorderImage {
-            source: "images/bluebutton.png"
+            source: "./images/bluebutton.png"
             border {
                 left: 13; top: 13; right: 13; bottom: 13;
             }
@@ -24,12 +24,12 @@ Window {
                 anchors.left: parent.left
                 anchors.leftMargin: 40
                 anchors.verticalCenter: parent.verticalCenter
-                source: "images/login.png"
+                source: "./images/login.png"
             }
             Text {
                 anchors.centerIn: parent
                 text: "Login"
-                font.family: myFont.name; font.bold: true; color: "white"; font.pixelSize: 12
+                font.family: myFont.name; font.bold: true; color: "white"; font.pixelSize: 32
             }
             MouseArea {
                 anchors.fill: parent
