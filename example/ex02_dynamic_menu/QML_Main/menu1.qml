@@ -6,7 +6,7 @@ Rectangle {
     FontLoader{
         id: myFont; source: "./fonts/NanumGothic.ttf"
     }
-    Text{
+    Text {
         anchors.centerIn: parent
         text: "Menu 1"
         font.family: myFont.name
