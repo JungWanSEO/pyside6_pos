@@ -1,11 +1,11 @@
 import QtQuick
 
 Window {
-    visible: true; id: root; width: 400; height: 300; color: "black"
+    visible: true; id: root; width: 400; height: 340; color: "black"
     
     property date today: new Date()
-    property int daysInMonth: new Date(today.getYear(),        // 1900년 도부터 현재 2020 이면 120
-                                       today.getMonth() + 1,   // getMonth()는 1월이 0, 3월이면 1을 더함.
+    property int daysInMonth: new Date(showDate.getFullYear(),        // 1900년 도부터 현재 2020 이면 120
+                                       showDate.getMonth() + 1,   // getMonth()는 1월이 0, 3월이면 1을 더함.
                                        0).getDate()            // 1일은 1부터 시작
     property date showDate: new Date()
 
@@ -14,7 +14,7 @@ Window {
 
     Item {
         id: title; anchors.top: parent.top; anchors.topMargin: 10; width: parent.width
-        height: 30
+        height: childrenRect.height
         Image {
             source: "./images/left.png"; anchors.left: parent.left; anchors.leftMargin: 10
             MouseArea {
@@ -24,8 +24,7 @@ Window {
         }
         Text {
             anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: parent.top
-            color: "white";  text: Qt.formatDateTime(showDate, "M월")
+            color: "white";  text: Qt.formatDateTime(showDate, "yyyy년 M월")
             font.pointSize: 14
             font.bold: true
         }
