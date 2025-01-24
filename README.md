@@ -1,2 +1,2 @@
-# pyside6_pos
-pyside6으로 POS 시스템 만들기
+# pyside6
+VB6.0에서 pyside6으로 해보기
